@@ -12,4 +12,5 @@
 
 
 ## Notes
-- There seems to be an error when the program encounters files with spaces in the name.
+- Fixed issue with inability to download images that are not PNG files;
+- Added jupyter notebook version.
