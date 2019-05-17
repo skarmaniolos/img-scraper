@@ -1,7 +1,7 @@
-# Image Scraper in Python 🐍
+# Image Board File Scraper
 
 ## Methods of Use
-- Can be run as a standalone script or through Jupyter Notebook
+- Can be run as a standalone script or through the included Jupyter Notebook.
 
 ## Requirements & Dependencies
 - python3, pip3
@@ -15,4 +15,12 @@
 
 ## Notes
 - Fixed issue with inability to download images that are not PNG files;
+  ~~~~
+  def img_alpha_to_colour(image, color=(255, 255, 255)):
+      image.load()  # needed for split()
+      background = Image.new('RGB', image.size, color)
+      background.paste(image, mask=image.split()[3])  # 3 is the alpha channel
+      return background
+  ~~~~
+
 - Added jupyter notebook version.
