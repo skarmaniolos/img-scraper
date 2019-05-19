@@ -1,16 +1,17 @@
 # Basic .gitattributes for a python repo.
 
 # All files
-linguist-language=python
+# ===========
+# linguist-language=python
 
 # Source files
 # ============
-*.pxd    text diff=python
-*.py     text diff=python
-*.py3    text diff=python
-*.pyw    text diff=python
-*.ipynb  text diff=python
-*.pyx    text diff=python
+*.pxd    linguist-language=python
+*.py     linguist-language=python
+*.py3    linguist-language=python
+*.pyw    linguist-language=python
+*.ipynb  linguist-language=python
+*.pyx    linguist-language=python
 
 # Binary files
 # ============
