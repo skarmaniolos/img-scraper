@@ -1,5 +1,8 @@
 # Basic .gitattributes for a python repo.
 
+# All files
+linguist-language=python
+
 # Source files
 # ============
 *.pxd    text diff=python
