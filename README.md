@@ -1,26 +1,29 @@
-# Image Board File Scraper
+# Image Board File Scraper 🔬
+A simple, command-line web scraper built primarily to extract images from [image boards](https://en.wikipedia.org/wiki/Imageboard). The file can be ran from the command-line or through the provided jupyter notebook.
 
-## Methods of Use
-- Can be run as a standalone script or through the included Jupyter Notebook.
+#### -- Project Status: [Finished]
 
-## Requirements & Dependencies
-- python3, pip3
-- BeautifulSoup4
+### Methods
+* Web Crawling
+* Data Scraping
 
-## Installation
-- Step 1
-  - 'sudo pip3 install -r req-list.txt'
-- Step 2
-  - eg. 'python3 scraper.py page <url> <path>' where url is the webpage you want to scrape and path is the path on your computer. Ensure that the destination directory exists before running.
+### Tools
+* Python
+* Jupyter
 
-## Notes
-- Fixed issue with inability to download images that are not PNG files;
-  ~~~~
-  def img_alpha_to_colour(image, color=(255, 255, 255)):
-      image.load()  # needed for split()
-      background = Image.new('RGB', image.size, color)
-      background.paste(image, mask=image.split()[3])  # 3 is the alpha channel
-      return background
-  ~~~~
+## Getting Started
+1. Run the following from your terminal: 
+	'sudo pip3 install -r req-list.txt'
+2. Execute the .py file as follows:
+	'python3 scraper.py page <url> <path>' 
+	$let url = target webpage, path = path on computer$
 
-- Added jupyter notebook version.
+
+## Contributors
+
+| Name    | Handle   		  | 
+|---------|-------------------|
+|[Steven K](https://github.com/skarmaniolos)| @skarmaniolos        |
+
+## Contact
+* Feel free to contact me on Twitter: [@skarmaniolos](https://twitter.com/skarmaniolos) for any questions!
