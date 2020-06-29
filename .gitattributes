@@ -1,0 +1,29 @@
+# Basic .gitattributes for a python repo.
+
+# All files
+# ===========
+# linguist-language=python
+
+# Source files
+# ============
+*.pxd    linguist-language=python
+*.py     linguist-language=python
+*.py3    linguist-language=python
+*.pyw    linguist-language=python
+*.ipynb  linguist-language=python
+*.pyx    linguist-language=python
+
+# Binary files
+# ============
+*.db     binary
+*.p      binary
+*.pkl    binary
+*.pickle binary
+*.pyc    binary
+*.pyd    binary
+*.pyo    binary
+
+# Note: .db, .p, and .pkl files are associated
+# with the python modules ``pickle``, ``dbm.*``,
+# ``shelve``, ``marshal``, ``anydbm``, & ``bsddb``
+# (among others).
