@@ -12,7 +12,6 @@ A simple, command-line web scraper built primarily to extract images from [image
 
 ## Getting Started
 1. Run the following from your terminal: 
-	'sudo pip3 install -r req-list.txt'
+	`sudo pip3 install -r req-list.txt`
 2. Execute the .py file as follows:
-	'python3 scraper.py page <url> <path>' 
-	$let url = target webpage, path = path on computer$
+	`python3 scraper.py page <url> <path>`
